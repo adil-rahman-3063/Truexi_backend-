@@ -20,8 +20,9 @@ app.get('/api/matches', async (req, res) => {
     const response = await axios.get(url, {
       timeout: 10000,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'User-Agent': 'FotMob/4.0.0 (com.fotmob.android; build:1; Android 13)',
         'Accept': 'application/json',
+        'X-Fotmob-App-Id': 'com.fotmob.android',
       }
     });
     res.json(response.data);
@@ -41,8 +42,9 @@ app.get('/api/matchDetails', async (req, res) => {
     const response = await axios.get(url, {
       timeout: 10000,
       headers: {
-        'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36',
+        'User-Agent': 'FotMob/4.0.0 (com.fotmob.android; build:1; Android 13)',
         'Accept': 'application/json',
+        'X-Fotmob-App-Id': 'com.fotmob.android',
       }
     });
     res.json(response.data);
